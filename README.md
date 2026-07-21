@@ -26,11 +26,11 @@
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/FiePaw/FiePaw/output/stats.svg" alt="GitHub stats" height="150" />
-  <img src="https://raw.githubusercontent.com/FiePaw/FiePaw/output/streak.svg" alt="GitHub streak" height="150" />
+  <img src="https://raw.githubusercontent.com/FiePaw/FiePaw/output/langs.svg" alt="Top languages" height="150" />
 </div>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app?username=FiePaw&theme=dracula&column=-1&row=1&margin-w=8&no-bg=true&no-frame=true" height="100" alt="trophy" />
+  <img src="https://raw.githubusercontent.com/FiePaw/FiePaw/output/streak.svg" alt="GitHub streak" height="140" />
 </div>
 
 ---
