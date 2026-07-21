@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/89567983?v=4" width="120" style="border-radius: 50%;" />
-  
+
   <h1>FiePaw</h1>
   <p>Solo developer — building browser automation, web apps, CLI tools & Roblox games.</p>
 
@@ -25,12 +25,12 @@
 ### 📊 Stats
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=FiePaw&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=8&order=3" height="140" alt="streak graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FiePaw&layout=compact&theme=dracula&hide_border=true&border_radius=8" height="140" alt="top languages" />
+  <img src="https://raw.githubusercontent.com/FiePaw/FiePaw/output/stats.svg" alt="GitHub stats" height="150" />
+  <img src="https://raw.githubusercontent.com/FiePaw/FiePaw/output/streak.svg" alt="GitHub streak" height="150" />
 </div>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app?username=FiePaw&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=true&no-frame=true" height="120" alt="trophy graph" />
+  <img src="https://github-profile-trophy.vercel.app?username=FiePaw&theme=dracula&column=-1&row=1&margin-w=8&no-bg=true&no-frame=true" height="100" alt="trophy" />
 </div>
 
 ---
@@ -38,17 +38,17 @@
 ### 🛠️ Tech Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=py" height="48" alt="Python" title="Python" />
+  <img src="https://skillicons.dev/icons?i=py" height="48" alt="Python" />
   <img width="8" />
-  <img src="https://skillicons.dev/icons?i=ts" height="48" alt="TypeScript" title="TypeScript" />
+  <img src="https://skillicons.dev/icons?i=ts" height="48" alt="TypeScript" />
   <img width="8" />
-  <img src="https://skillicons.dev/icons?i=nodejs" height="48" alt="Node.js" title="Node.js" />
+  <img src="https://skillicons.dev/icons?i=nodejs" height="48" alt="Node.js" />
   <img width="8" />
-  <img src="https://skillicons.dev/icons?i=express" height="48" alt="Express" title="Express" />
+  <img src="https://skillicons.dev/icons?i=express" height="48" alt="Express" />
   <img width="8" />
-  <img src="https://skillicons.dev/icons?i=linux" height="48" alt="Linux" title="Linux" />
+  <img src="https://skillicons.dev/icons?i=linux" height="48" alt="Linux" />
   <img width="8" />
-  <img src="https://skillicons.dev/icons?i=php" height="48" alt="PHP" title="PHP" />
+  <img src="https://skillicons.dev/icons?i=php" height="48" alt="PHP" />
 </div>
 
 <div align="center" style="margin-top: 8px;">
