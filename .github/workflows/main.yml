@@ -9,11 +9,11 @@ on:
       - main
 
 jobs:
-  generate:
+  pacman:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 20
+    timeout-minutes: 10
 
     steps:
       - name: Generate pacman contribution graph
@@ -31,35 +31,34 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 10
+
+    steps:
       - uses: actions/checkout@v4
         with:
           ref: output
           fetch-depth: 0
 
-      - name: Generate stats card
-        uses: anuraghazra/github-readme-stats@latest
-        with:
-          username: FiePaw
-          theme: dracula
-          hide_border: true
-          output_path: stats.svg
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch stats SVG
+        run: |
+          curl -f "https://github-readme-stats.vercel.app/api?username=FiePaw&show_icons=true&theme=dracula&hide_border=true&border_radius=8" -o stats.svg || echo "stats fetch failed"
 
-      - name: Generate streak card
-        uses: DenverCoder1/github-readme-streak-stats@main
-        with:
-          user: FiePaw
-          theme: dracula
-          hide_border: true
-          output_path: streak.svg
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch top languages SVG
+        run: |
+          curl -f "https://github-readme-stats.vercel.app/api/top-langs/?username=FiePaw&layout=compact&theme=dracula&hide_border=true&border_radius=8" -o langs.svg || echo "langs fetch failed"
 
-      - name: Commit stats and streak SVG
+      - name: Fetch streak SVG
+        run: |
+          curl -f "https://streak-stats.demolab.com?user=FiePaw&theme=dracula&hide_border=true&border_radius=8" -o streak.svg || echo "streak fetch failed"
+
+      - name: Commit SVGs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add stats.svg streak.svg
+          git add -A
           git diff --cached --quiet || git commit -m "chore: update stats [skip ci]"
           git push
